@@ -26,3 +26,16 @@ var students = [
     { name: "Nguyễn Văn B", age: 21, isStudent: false },
     { name: "Nguyễn Văn C", age: 22, isStudent: true },
 ];
+// Enum type => kiểu dữ liệu định nghĩa các giá trị có thể có của một biến
+var Role;
+(function (Role) {
+    Role["ADMIN"] = "ADMIN";
+    Role["GUEST"] = "GUEST";
+    Role["USER"] = "USER";
+})(Role || (Role = {}));
+var user = {
+    name: "Nguyễn Văn A",
+    age: 20,
+    role: Role.ADMIN
+};
+console.log(user);
