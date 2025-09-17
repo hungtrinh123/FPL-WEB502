@@ -23,6 +23,7 @@ function App() {
             {count}
             <button onClick={() => setCount(count + 1)}></button>
             <button onClick={() => setColor("blue")}>Blue</button>
+            <hr />
         </>
     );
 }
