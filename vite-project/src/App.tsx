@@ -21,7 +21,10 @@ function App() {
             <div style={{ backgroundColor: color, width: 200, height: 200 }}></div>
             <hr />
             {count}
-            <button onClick={() => setCount(count + 1)}></button>
+            <button
+                className="bg-blue-500 text-white p-2 rounded-md"
+                onClick={() => setCount(count + 1)}
+            ></button>
             <button onClick={() => setColor("blue")}>Blue</button>
             <hr />
         </>
